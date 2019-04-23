@@ -39,7 +39,7 @@ def getLinks(site):
         # print(link.a['href'])
         newList.append(link.a['href'])
 
-
+# check for what is new so that we don't append duplicates to the file
 def checkForDuplicates(oldList, newList):
     for x in newList:
         if x not in oldList:
